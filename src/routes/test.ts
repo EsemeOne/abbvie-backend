@@ -1,5 +1,5 @@
 import { PgDBContext } from "@multiple-transaction-manager/pg";
-import express, { NextFunction, Request, Response, Router } from "express";
+import express, { NextFunction, Request, response, Response, Router } from "express";
 import { FunctionContext, MultiTxnMngr, Task, CondTask, CondTaskRet } from "multiple-transaction-manager";
 import CustomClient from "../service/apiClients";
 import rh from "../service/routeHelper";
@@ -21,14 +21,19 @@ const router: Router = express.Router();
  *              schema:
  *                  type: string
  *                  example: {
- *                              "something":"something else"
+ *                              "action":"config|data"
  *                           }
  *     responses:
  *       200:
  *         description: Device config
  */
 router.post('/testapi', rh.secure, (req: Request, res: Response, next: NextFunction) => {
-    rh.resp(res, global.as.HTTP_STATUS_CODES.OK, req.body);
+    if (req.body.action === "config")
+        res.redirect("../testfiles/config.json");
+    else if (req.body.action === "data")
+        res.redirect("../testfiles/data.json");
+    else
+        next("Unknown action")
 });
 
 export default router;

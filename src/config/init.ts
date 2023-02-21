@@ -1,4 +1,3 @@
-import { ExpressOIDC } from "@okta/oidc-middleware";
 import cors from "cors";
 import * as dotenv from "dotenv";
 import { Express, json } from "express";
@@ -51,12 +50,6 @@ export default async (app: Express) => {
     app.use(morgan('combined'));
     app.use(cors());
     app.options('*', cors());
-    //session for okta
-    app.use(session({
-        secret: process.env.SEB_SECRET,
-        resave: true,
-        saveUninitialized: false
-    }));
 
     // Init serial entrepreneur backend
     seb.init({

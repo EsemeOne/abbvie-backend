@@ -1,0 +1,19 @@
+{
+    "lines": [
+        {
+            "id": "line1",
+            "images": [
+                {
+                    "name": "Image 1",
+                    "status": "Clean",
+                    "url":"/testfiles/1.png"
+                },
+                {
+                    "name": "Image 2",
+                    "status": "Occupied",
+                    "url":"/testfiles/2.png"
+                }
+            ]
+        }
+    ]
+}
