@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Data.SomeString",
+		"dataType": "string-(32)",
+		"dataValidation": "(\"[VALUE]\".length <= 32)",
+		"dataUnits": "",
+		"description": "Test validation"
+	}
+]

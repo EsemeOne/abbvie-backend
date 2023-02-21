@@ -1,0 +1,36 @@
+{
+	"Admin": [
+		{"code": 4001, "view": "HamburgerMenuView", "function": "Home"},
+		{"code": 4002, "view": "HamburgerMenuView", "function": "Modify User Data"},
+		{"code": 4003, "view": "HamburgerMenuView", "function": "Change Password"},
+		{"code": 4004, "view": "HamburgerMenuView", "function": "Logout"},
+		{"code": 4020, "view": "ShortcutView", "function": "Admin"},
+		{"code": 4021, "view": "ShortcutView", "function": "Manage"},
+		{"code": 4040, "view": "AdminGUIRolesView", "function": "Get Existing Role"},
+		{"code": 4041, "view": "AdminGUIRolesView", "function": "Save Role"},
+		{"code": 4061, "view": "ChangePasswordView", "function": "Change Password"},
+		{"code": 4131, "view": "UpdateUserView", "function": "Update"},
+		{"code": 4200, "view": "FirstView", "function": "Search"}    
+	],
+	"SuperUser": [
+		{"code": 4001, "view": "HamburgerMenuView", "function": "Home"},
+		{"code": 4002, "view": "HamburgerMenuView", "function": "Modify User Data"},
+		{"code": 4003, "view": "HamburgerMenuView", "function": "Change Password"},
+		{"code": 4004, "view": "HamburgerMenuView", "function": "Logout"},
+		{"code": 4021, "view": "ShortcutView", "function": "Manage"},
+		{"code": 4061, "view": "ChangePasswordView", "function": "Change Password"},
+		{"code": 4131, "view": "UpdateUserView", "function": "Update"},
+		{"code": 4200, "view": "FirstView", "function": "Search"}    
+	],
+	"User": [
+		{"code": 4001, "view": "HamburgerMenuView", "function": "Home"},
+		{"code": 4002, "view": "HamburgerMenuView", "function": "Modify User Data"},
+		{"code": 4003, "view": "HamburgerMenuView", "function": "Change Password"},
+		{"code": 4004, "view": "HamburgerMenuView", "function": "Logout"},
+		{"code": 4021, "view": "ShortcutView", "function": "Manage"},
+		{"code": 4061, "view": "ChangePasswordView", "function": "Change Password"},
+		{"code": 4131, "view": "UpdateUserView", "function": "Update"}
+	],
+	"None": [
+	]
+}
